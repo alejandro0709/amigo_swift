@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A900F71123EDFCA900C525EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F71023EDFCA900C525EE /* AppDelegate.swift */; };
+		A900F71323EDFCA900C525EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F71223EDFCA900C525EE /* SceneDelegate.swift */; };
+		A900F71523EDFCA900C525EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F71423EDFCA900C525EE /* ViewController.swift */; };
+		A900F71823EDFCA900C525EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A900F71623EDFCA900C525EE /* Main.storyboard */; };
+		A900F71A23EDFCAA00C525EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A900F71923EDFCAA00C525EE /* Assets.xcassets */; };
+		A900F71D23EDFCAA00C525EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A900F71B23EDFCAA00C525EE /* LaunchScreen.storyboard */; };
+		A900F72823EDFCAA00C525EE /* AmiGOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F72723EDFCAA00C525EE /* AmiGOTests.swift */; };
+		A900F73323EDFCAA00C525EE /* AmiGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F73223EDFCAA00C525EE /* AmiGOUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A900F72423EDFCAA00C525EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A900F70523EDFCA900C525EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A900F70C23EDFCA900C525EE;
+			remoteInfo = AmiGO;
+		};
+		A900F72F23EDFCAA00C525EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A900F70523EDFCA900C525EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A900F70C23EDFCA900C525EE;
+			remoteInfo = AmiGO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A900F70D23EDFCA900C525EE /* AmiGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmiGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A900F71023EDFCA900C525EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A900F71223EDFCA900C525EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A900F71423EDFCA900C525EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A900F71723EDFCA900C525EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A900F71923EDFCAA00C525EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A900F71C23EDFCAA00C525EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A900F71E23EDFCAA00C525EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A900F72323EDFCAA00C525EE /* AmiGOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmiGOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A900F72723EDFCAA00C525EE /* AmiGOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiGOTests.swift; sourceTree = "<group>"; };
+		A900F72923EDFCAA00C525EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A900F72E23EDFCAA00C525EE /* AmiGOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmiGOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A900F73223EDFCAA00C525EE /* AmiGOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiGOUITests.swift; sourceTree = "<group>"; };
+		A900F73423EDFCAA00C525EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A900F70A23EDFCA900C525EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A900F72023EDFCAA00C525EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A900F72B23EDFCAA00C525EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A900F70423EDFCA900C525EE = {
+			isa = PBXGroup;
+			children = (
+				A900F70F23EDFCA900C525EE /* AmiGO */,
+				A900F72623EDFCAA00C525EE /* AmiGOTests */,
+				A900F73123EDFCAA00C525EE /* AmiGOUITests */,
+				A900F70E23EDFCA900C525EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A900F70E23EDFCA900C525EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A900F70D23EDFCA900C525EE /* AmiGO.app */,
+				A900F72323EDFCAA00C525EE /* AmiGOTests.xctest */,
+				A900F72E23EDFCAA00C525EE /* AmiGOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A900F70F23EDFCA900C525EE /* AmiGO */ = {
+			isa = PBXGroup;
+			children = (
+				A900F71023EDFCA900C525EE /* AppDelegate.swift */,
+				A900F71223EDFCA900C525EE /* SceneDelegate.swift */,
+				A900F71423EDFCA900C525EE /* ViewController.swift */,
+				A900F71623EDFCA900C525EE /* Main.storyboard */,
+				A900F71923EDFCAA00C525EE /* Assets.xcassets */,
+				A900F71B23EDFCAA00C525EE /* LaunchScreen.storyboard */,
+				A900F71E23EDFCAA00C525EE /* Info.plist */,
+			);
+			path = AmiGO;
+			sourceTree = "<group>";
+		};
+		A900F72623EDFCAA00C525EE /* AmiGOTests */ = {
+			isa = PBXGroup;
+			children = (
+				A900F72723EDFCAA00C525EE /* AmiGOTests.swift */,
+				A900F72923EDFCAA00C525EE /* Info.plist */,
+			);
+			path = AmiGOTests;
+			sourceTree = "<group>";
+		};
+		A900F73123EDFCAA00C525EE /* AmiGOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A900F73223EDFCAA00C525EE /* AmiGOUITests.swift */,
+				A900F73423EDFCAA00C525EE /* Info.plist */,
+			);
+			path = AmiGOUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A900F70C23EDFCA900C525EE /* AmiGO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A900F73723EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGO" */;
+			buildPhases = (
+				A900F70923EDFCA900C525EE /* Sources */,
+				A900F70A23EDFCA900C525EE /* Frameworks */,
+				A900F70B23EDFCA900C525EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmiGO;
+			productName = AmiGO;
+			productReference = A900F70D23EDFCA900C525EE /* AmiGO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A900F72223EDFCAA00C525EE /* AmiGOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A900F73A23EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGOTests" */;
+			buildPhases = (
+				A900F71F23EDFCAA00C525EE /* Sources */,
+				A900F72023EDFCAA00C525EE /* Frameworks */,
+				A900F72123EDFCAA00C525EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A900F72523EDFCAA00C525EE /* PBXTargetDependency */,
+			);
+			name = AmiGOTests;
+			productName = AmiGOTests;
+			productReference = A900F72323EDFCAA00C525EE /* AmiGOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A900F72D23EDFCAA00C525EE /* AmiGOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A900F73D23EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGOUITests" */;
+			buildPhases = (
+				A900F72A23EDFCAA00C525EE /* Sources */,
+				A900F72B23EDFCAA00C525EE /* Frameworks */,
+				A900F72C23EDFCAA00C525EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A900F73023EDFCAA00C525EE /* PBXTargetDependency */,
+			);
+			name = AmiGOUITests;
+			productName = AmiGOUITests;
+			productReference = A900F72E23EDFCAA00C525EE /* AmiGOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A900F70523EDFCA900C525EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Dspot;
+				TargetAttributes = {
+					A900F70C23EDFCA900C525EE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					A900F72223EDFCAA00C525EE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A900F70C23EDFCA900C525EE;
+					};
+					A900F72D23EDFCAA00C525EE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = A900F70C23EDFCA900C525EE;
+					};
+				};
+			};
+			buildConfigurationList = A900F70823EDFCA900C525EE /* Build configuration list for PBXProject "AmiGO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A900F70423EDFCA900C525EE;
+			productRefGroup = A900F70E23EDFCA900C525EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A900F70C23EDFCA900C525EE /* AmiGO */,
+				A900F72223EDFCAA00C525EE /* AmiGOTests */,
+				A900F72D23EDFCAA00C525EE /* AmiGOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A900F70B23EDFCA900C525EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A900F71D23EDFCAA00C525EE /* LaunchScreen.storyboard in Resources */,
+				A900F71A23EDFCAA00C525EE /* Assets.xcassets in Resources */,
+				A900F71823EDFCA900C525EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A900F72123EDFCAA00C525EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A900F72C23EDFCAA00C525EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A900F70923EDFCA900C525EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A900F71523EDFCA900C525EE /* ViewController.swift in Sources */,
+				A900F71123EDFCA900C525EE /* AppDelegate.swift in Sources */,
+				A900F71323EDFCA900C525EE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A900F71F23EDFCAA00C525EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A900F72823EDFCAA00C525EE /* AmiGOTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A900F72A23EDFCAA00C525EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A900F73323EDFCAA00C525EE /* AmiGOUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A900F72523EDFCAA00C525EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A900F70C23EDFCA900C525EE /* AmiGO */;
+			targetProxy = A900F72423EDFCAA00C525EE /* PBXContainerItemProxy */;
+		};
+		A900F73023EDFCAA00C525EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A900F70C23EDFCA900C525EE /* AmiGO */;
+			targetProxy = A900F72F23EDFCAA00C525EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A900F71623EDFCA900C525EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A900F71723EDFCA900C525EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A900F71B23EDFCAA00C525EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A900F71C23EDFCAA00C525EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A900F73523EDFCAA00C525EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A900F73623EDFCAA00C525EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A900F73823EDFCAA00C525EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmiGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dspot.AmiGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A900F73923EDFCAA00C525EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmiGO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dspot.AmiGO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A900F73B23EDFCAA00C525EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmiGOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dspot.AmiGOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmiGO.app/AmiGO";
+			};
+			name = Debug;
+		};
+		A900F73C23EDFCAA00C525EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmiGOTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dspot.AmiGOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmiGO.app/AmiGO";
+			};
+			name = Release;
+		};
+		A900F73E23EDFCAA00C525EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmiGOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dspot.AmiGOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmiGO;
+			};
+			name = Debug;
+		};
+		A900F73F23EDFCAA00C525EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmiGOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dspot.AmiGOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmiGO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A900F70823EDFCA900C525EE /* Build configuration list for PBXProject "AmiGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900F73523EDFCAA00C525EE /* Debug */,
+				A900F73623EDFCAA00C525EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A900F73723EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900F73823EDFCAA00C525EE /* Debug */,
+				A900F73923EDFCAA00C525EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A900F73A23EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900F73B23EDFCAA00C525EE /* Debug */,
+				A900F73C23EDFCAA00C525EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A900F73D23EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900F73E23EDFCAA00C525EE /* Debug */,
+				A900F73F23EDFCAA00C525EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A900F70523EDFCA900C525EE /* Project object */;
+}
