@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>232339373604-ehn76f72lll20jurvdb7fgms4nn66e4b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.232339373604-ehn76f72lll20jurvdb7fgms4nn66e4b</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>232339373604-kj4h2fqqnsk2q6aa5amlvc74guu7k7p7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCafzeXWd4CWcCRtO3ogvgmkadH_WWN1tc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>232339373604</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dspot.AmiGO</string>
+	<key>PROJECT_ID</key>
+	<string>amigo-f99e5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>amigo-f99e5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:232339373604:ios:cefe49b5b440b8cc0522b1</string>
+	<key>DATABASE_URL</key>
+	<string>https://amigo-f99e5.firebaseio.com</string>
+</dict>
+</plist>
