@@ -6,13 +6,9 @@
 import Foundation
 import FirebaseAuth
 import FirebaseDatabase
+import FirebaseFirestore
 
 class DatabaseUtil{
-    private var databaseReference:DatabaseReference
-
-    init(databaseReference: DatabaseReference){
-        self.databaseReference = databaseReference
-    }
 
     func createLoggedUser(_ data: [String: AnyObject]) {
         let userID = Auth.auth().currentUser!.uid
@@ -22,7 +18,8 @@ class DatabaseUtil{
     }
 
     private func insertUser(_ user: User, _ userFirebaseId: String) {
-        databaseReference.child("user").child(userFirebaseId).setValue(user.toDictionary())
+        let db = Firestore.firestore()
+        db.collection("users").addDocument(data: [userFirebaseId : user.toDictionary()])
     }
 
 }

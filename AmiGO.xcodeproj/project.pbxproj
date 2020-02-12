@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		20DC7DC3CBD187B59C2696D2 /* Pods_AmiGOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F83FA646C4B2C4DF1EC037 /* Pods_AmiGOTests.framework */; };
+		9A2E72D586ADF43FBBA0FA6B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E713A8A64CAE70B06A088 /* MapViewController.swift */; };
 		9A2E7472E1F6604EE3FBE164 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E74E3B8DB260077C6CCED /* AuthenticationViewController.swift */; };
 		9A2E752865DD635000562F25 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E75203746B963A4C7C09F /* UIView.swift */; };
+		9A2E77CAB3F44615EEDC9E6A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E7E8E3F9C33C4570C2593 /* ProfileViewController.swift */; };
 		9A2E7889AE3344F062BDDB2D /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E762DE71E726FCAB0E688 /* AuthRepositoryImpl.swift */; };
 		9A2E789BBEE38EC3D85527A5 /* DatabaseUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E79E444F3D350CF00BAEE /* DatabaseUtil.swift */; };
 		9A2E7926A9336B06791708E7 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E70CEAAC0DE947C970501 /* AuthRepository.swift */; };
@@ -25,6 +27,7 @@
 		A900F73323EDFCAA00C525EE /* AmiGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F73223EDFCAA00C525EE /* AmiGOUITests.swift */; };
 		A92C3B7623F1C81A00D18BB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A92C3B7523F1C81A00D18BB7 /* GoogleService-Info.plist */; };
 		A9A05E3C23F130A0003171DA /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A05E3B23F130A0003171DA /* MontserratAlternates-Bold.ttf */; };
+		A9B5B31E23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9B5B31D23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf */; };
 		B825344262B466C73F5C9D7F /* Pods_AmiGO_AmiGOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD77D4B6C41D8FD7D8CB108 /* Pods_AmiGO_AmiGOUITests.framework */; };
 		D95F4AEE190229937F4DD637 /* Pods_AmiGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93AFFCEE98D9CDA24DCF749 /* Pods_AmiGO.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,7 @@
 		6F6352E90948DE9CB5C6D066 /* Pods-AmiGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO.release.xcconfig"; path = "Target Support Files/Pods-AmiGO/Pods-AmiGO.release.xcconfig"; sourceTree = "<group>"; };
 		9A2E70399E98D79995E3AA33 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A2E70CEAAC0DE947C970501 /* AuthRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		9A2E713A8A64CAE70B06A088 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A2E74E3B8DB260077C6CCED /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		9A2E75203746B963A4C7C09F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		9A2E762DE71E726FCAB0E688 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 		9A2E78CE0994A1AB2EA26DEB /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		9A2E79E444F3D350CF00BAEE /* DatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		9A2E7DD84AA340534F379772 /* Container+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+Extensions.swift"; sourceTree = "<group>"; };
+		9A2E7E8E3F9C33C4570C2593 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A900F70D23EDFCA900C525EE /* AmiGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmiGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A900F71023EDFCA900C525EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A900F71423EDFCA900C525EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 		A900F73423EDFCAA00C525EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92C3B7523F1C81A00D18BB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9A05E3B23F130A0003171DA /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlternates-Bold.ttf"; path = "../../../../MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
+		A9B5B31D23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlternates-ExtraBold.ttf"; path = "../../../../MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B69C27965D389ED64DEB8223 /* Pods-AmiGOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGOTests.debug.xcconfig"; path = "Target Support Files/Pods-AmiGOTests/Pods-AmiGOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B93AFFCEE98D9CDA24DCF749 /* Pods_AmiGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +128,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9A2E7145712FBB8E1EA5B181 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E7E8E3F9C33C4570C2593 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		9A2E72E0F167459F870231ED /* Commoms */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,12 +163,29 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		9A2E76F1A23885717612D358 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E713A8A64CAE70B06A088 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		9A2E782F8E3D38351BB30BE7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				9A2E70399E98D79995E3AA33 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		9A2E7C6A8CA363575E98FF6A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E76F1A23885717612D358 /* Map */,
+				9A2E7145712FBB8E1EA5B181 /* Profile */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		A900F70423EDFCA900C525EE = {
@@ -217,6 +248,7 @@
 		A9A05E3A23F12FF7003171DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9B5B31D23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf */,
 				A9A05E3B23F130A0003171DA /* MontserratAlternates-Bold.ttf */,
 			);
 			path = Resources;
@@ -226,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				A9E89C1B23EEFB80000D4840 /* Authentication */,
+				9A2E7C6A8CA363575E98FF6A /* Main */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -372,6 +405,7 @@
 				A92C3B7623F1C81A00D18BB7 /* GoogleService-Info.plist in Resources */,
 				A9A05E3C23F130A0003171DA /* MontserratAlternates-Bold.ttf in Resources */,
 				A900F71A23EDFCAA00C525EE /* Assets.xcassets in Resources */,
+				A9B5B31E23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +544,8 @@
 				9A2E789BBEE38EC3D85527A5 /* DatabaseUtil.swift in Sources */,
 				9A2E7E14175B1EC0FA6C3236 /* User.swift in Sources */,
 				9A2E7A4B6E334FBE608576EA /* Container+Extensions.swift in Sources */,
+				9A2E72D586ADF43FBBA0FA6B /* MapViewController.swift in Sources */,
+				9A2E77CAB3F44615EEDC9E6A /* ProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

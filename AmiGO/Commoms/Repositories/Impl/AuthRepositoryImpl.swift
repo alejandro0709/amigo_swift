@@ -49,8 +49,8 @@ class AuthRepositoryImpl: AuthRepository {
         return Observable<[String: AnyObject]>.create { observable in
             let params = ["fields": "id, picture "]
             let graphRequest = GraphRequest.init(graphPath: "/me", parameters: params)
-            let Connection = GraphRequestConnection()
-            Connection.add(graphRequest) { (Connection, result, error) in
+            let connection = GraphRequestConnection()
+            connection.add(graphRequest) { (Connection, result, error) in
                 if let error = error {
                     observable.onError(error)
                     return
@@ -58,7 +58,7 @@ class AuthRepositoryImpl: AuthRepository {
                 let info = result as! [String: AnyObject]
                 observable.onNext(info)
             }
-            Connection.start()
+            connection.start()
             return Disposables.create()
         }
     }

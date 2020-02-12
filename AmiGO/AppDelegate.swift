@@ -28,7 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = getInitialViewController()
+        let nav = UINavigationController(rootViewController: getInitialViewController())
+        nav.isToolbarHidden = true
+        window?.rootViewController = nav
         return true
     }
     

@@ -15,7 +15,7 @@ class User: Codable {
             let imageData = picture as! [String: AnyObject]
             if let data = imageData["data"] {
                 let dict = data as! [String: AnyObject]
-                self.image = dict["url"] as! String
+                self.image = (dict["url"] as! String)
             }
         }
     }
@@ -26,4 +26,5 @@ class User: Codable {
         dict["image"] = image
         return dict
     }
+
 }

@@ -6,6 +6,7 @@
 import Foundation
 import FBSDKLoginKit
 import RxSwift
+import FirebaseAuth
 
 class AuthenticationViewModel {
     let repository: AuthRepository
@@ -17,6 +18,7 @@ class AuthenticationViewModel {
     }
 
     var userLogin = PublishSubject<Any>()
+
 
     func attemptLogin() {
         self.userLogin.onNext(true)
@@ -43,5 +45,11 @@ class AuthenticationViewModel {
     }
 
 
+    func initialize() {
+        if Auth.auth().currentUser == nil {
+            return
+        }
+        self.userLogin.onCompleted()
+    }
 }
 
