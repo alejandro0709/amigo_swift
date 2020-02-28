@@ -8,6 +8,7 @@ import UIKit
 import FBSDKLoginKit
 import FirebaseAuth
 import RxSwift
+import Swinject
 
 class AuthenticationViewController: UIViewController {
 
@@ -27,24 +28,43 @@ class AuthenticationViewController: UIViewController {
         super.viewDidLoad()
         self.mainView.delegate = self
 
-        for family: String in UIFont.familyNames
-        {
-            print(family)
-            for names: String in UIFont.fontNames(forFamilyName: family)
-            {
-                print("== \(names)")
+//        for family: String in UIFont.familyNames
+//        {
+//            print(family)
+//            for names: String in UIFont.fontNames(forFamilyName: family)
+//            {
+//                print("== \(names)")
+//            }
+//        }
+//
+//        viewModel?.userLogin.subscribe( onError: { error in
+//            print("login error: \(error)")
+//        }, onCompleted: {
+//            self.goMainScreen()
+//        }).disposed(by: disposeBag)
+//
+//        viewModel?.initialize()
+        
+        self.goMainScreen()
+        
+        
+        let content = UNMutableNotificationContent()
+               content.title = "Late wake up call"
+               content.body = "The early bird catches the worm, but the second mouse gets the cheese."
+               content.categoryIdentifier = "alarm"
+               content.userInfo = ["customData": "fizzbuzz"]
+               content.sound = UNNotificationSound.default
+        
+    
+
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
+
+               let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request,withCompletionHandler: { error in
+            if error != nil{
+                print("error \(String(describing: error))")
             }
-        }
-
-        viewModel?.userLogin.subscribe(onNext: { _ in
-            self.loginWithReadPermissions()
-        }, onError: { error in
-            print("login error: \(error.localizedDescription)")
-        }, onCompleted: {
-            self.goMainScreen()
-        }).disposed(by: disposeBag)
-
-        viewModel?.initialize()
+        })
     }
 
     private func goMainScreen() {
@@ -56,16 +76,47 @@ class AuthenticationViewController: UIViewController {
     private func getNextTabNavigationController() -> UITabBarController {
         let tabBarController = UITabBarController()
         tabBarController.viewControllers =  buildViewControllers()
-        tabBarController.tabBar.tintColor = UIColor.init(red: 21/255, green: 30/255, blue: 48/255, alpha: 1)
-        tabBarController.tabBar.unselectedItemTintColor = UIColor.init(red: 21/255, green: 30/255, blue: 48/255, alpha: 0.65)
+        tabBarController.tabBar.tintColor = UIColor.darkBlue
+        tabBarController.tabBar.unselectedItemTintColor = UIColor.darkBlue.withAlphaComponent(0.65)
+        
+        let gradient = CAGradientLayer()
+        let bounds = tabBarController.tabBar.bounds
+        gradient.frame = bounds
+        gradient.colors = [UIColor.white.cgColor, UIColor.white.withAlphaComponent(0.2).cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 1)
+        gradient.endPoint = CGPoint(x: 0, y: 0)
+
+        if let image = getImageFrom(gradientLayer: gradient) {
+           tabBarController.tabBar.backgroundImage = image
+        }
+        
         return tabBarController
+    }
+    
+    func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
+        var gradientImage:UIImage?
+        UIGraphicsBeginImageContext(gradientLayer.frame.size)
+        if let context = UIGraphicsGetCurrentContext() {
+            gradientLayer.render(in: context)
+            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
+        }
+        UIGraphicsEndImageContext()
+        return gradientImage
     }
 
     private func buildViewControllers() -> [UIViewController] {
         let fontAttributes = [NSAttributedString.Key.font: UIFont.init(name: "MontserratAlternates-ExtraBold", size: 12)]
         let mapViewController = setupMapViewController(fontAttributes: fontAttributes)
         let profileViewController = setupProfileViewController(fontAttributes: fontAttributes)
-        return [mapViewController, profileViewController]
+        let taskViewController = setupTaskViewController(fontAttributes: fontAttributes)
+        return [mapViewController, profileViewController, taskViewController]
+    }
+    
+    private func setupTaskViewController(fontAttributes:[NSAttributedString.Key: UIFont?]) -> TaskViewController {
+        let viewController = TaskViewController()
+        viewController.tabBarItem = UITabBarItem.init(title: "Tasks", image: nil, tag: 0)
+        viewController.tabBarItem.setTitleTextAttributes(fontAttributes as [NSAttributedString.Key : Any], for: .normal)
+        return viewController
     }
 
     private func setupProfileViewController(fontAttributes: [NSAttributedString.Key: UIFont?]) -> ProfileViewController {
@@ -107,7 +158,7 @@ class AuthenticationViewController: UIViewController {
 
 extension AuthenticationViewController: FbButtonDelegate {
     func onButtonPressed() {
-        self.viewModel?.attemptLogin()
+        self.loginWithReadPermissions()
     }
 
 

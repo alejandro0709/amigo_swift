@@ -1,0 +1,14 @@
+//
+//  Coord.swift
+//  AmiGO
+//
+//  Created by Alejandro on 21/02/2020.
+//  Copyright © 2020 Dspot. All rights reserved.
+//
+
+import Foundation
+
+class Coord: Codable {
+    var lat: Double?
+    var lon: Double?
+}

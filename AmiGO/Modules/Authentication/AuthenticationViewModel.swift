@@ -19,11 +19,6 @@ class AuthenticationViewModel {
 
     var userLogin = PublishSubject<Any>()
 
-
-    func attemptLogin() {
-        self.userLogin.onNext(true)
-    }
-
     func loginManagerDidComplete(_ result: LoginManagerLoginResult?, _ error: Error?) {
         if error != nil {
             self.userLogin.onError(error!)

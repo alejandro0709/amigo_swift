@@ -50,7 +50,16 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiYWxlamFuZHJva2l0c3VuZSIsImEiOiJjanlsYnBjMGQwNGt3M29tbnV3OXJnZ3YxIn0.3g9ueZjydSUnStk9TRSm4w</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string></string>
+	<key>NSLocationAlwaysUsageDescription</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
@@ -58,6 +67,10 @@
 	<array>
 		<string>MontserratAlternates-Bold.ttf</string>
 		<string>MontserratAlternates-ExtraBold.ttf</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
