@@ -34,7 +34,6 @@
 		A96D84DE23F5DCB500FB85D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A96D84DD23F5DCB500FB85D7 /* GoogleService-Info.plist */; };
 		A991BFD323FAFA8D00BF9DC8 /* AmigoAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991BFD223FAFA8D00BF9DC8 /* AmigoAnnotationView.swift */; };
 		A991F6F523F462B10019B523 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991F6F423F462B10019B523 /* Location.swift */; };
-		A9982A4F2409629600EED5E6 /* TaskTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9982A4E2409629600EED5E6 /* TaskTableCell.swift */; };
 		A9A83E17240DB6D00058A222 /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */; };
 		A9A83E18240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */; };
 		A9D2B21223FB100A00AD8556 /* AmigoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21123FB100A00AD8556 /* AmigoAnnotation.swift */; };
@@ -109,7 +108,6 @@
 		A96D84DD23F5DCB500FB85D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A991BFD223FAFA8D00BF9DC8 /* AmigoAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoAnnotationView.swift; sourceTree = "<group>"; };
 		A991F6F423F462B10019B523 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		A9982A4E2409629600EED5E6 /* TaskTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableCell.swift; sourceTree = "<group>"; };
 		A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
 		A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A9D2B21123FB100A00AD8556 /* AmigoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoAnnotation.swift; sourceTree = "<group>"; };
@@ -301,7 +299,6 @@
 			children = (
 				A9122CBF240882A800991525 /* TaskViewController.swift */,
 				A9122CC12408833900991525 /* TasksView.swift */,
-				A9982A4E2409629600EED5E6 /* TaskTableCell.swift */,
 			);
 			path = RealmToDo;
 			sourceTree = "<group>";
@@ -656,7 +653,6 @@
 				A942D69023F8D69B00C3A87F /* UIColor+Extension.swift in Sources */,
 				9A2E7E0BFE449004090E1FFE /* AuthenticationViewModel.swift in Sources */,
 				A991F6F523F462B10019B523 /* Location.swift in Sources */,
-				A9982A4F2409629600EED5E6 /* TaskTableCell.swift in Sources */,
 				A91389F123FDDABC00B35BF4 /* RestManager+Extension.swift in Sources */,
 				A942D68B23F8B09200C3A87F /* UIView+Extension.swift in Sources */,
 				9A2E7926A9336B06791708E7 /* AuthRepository.swift in Sources */,
