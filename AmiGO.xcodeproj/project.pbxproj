@@ -35,8 +35,8 @@
 		A991BFD323FAFA8D00BF9DC8 /* AmigoAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991BFD223FAFA8D00BF9DC8 /* AmigoAnnotationView.swift */; };
 		A991F6F523F462B10019B523 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991F6F423F462B10019B523 /* Location.swift */; };
 		A9982A4F2409629600EED5E6 /* TaskTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9982A4E2409629600EED5E6 /* TaskTableCell.swift */; };
-		A9A05E3C23F130A0003171DA /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A05E3B23F130A0003171DA /* MontserratAlternates-Bold.ttf */; };
-		A9B5B31E23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9B5B31D23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf */; };
+		A9A83E17240DB6D00058A222 /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */; };
+		A9A83E18240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */; };
 		A9D2B21223FB100A00AD8556 /* AmigoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21123FB100A00AD8556 /* AmigoAnnotation.swift */; };
 		A9D2B21423FB41A300AD8556 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21323FB41A300AD8556 /* MapViewModel.swift */; };
 		A9D2B21623FB427500AD8556 /* MapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21523FB427500AD8556 /* MapRepository.swift */; };
@@ -110,8 +110,8 @@
 		A991BFD223FAFA8D00BF9DC8 /* AmigoAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoAnnotationView.swift; sourceTree = "<group>"; };
 		A991F6F423F462B10019B523 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A9982A4E2409629600EED5E6 /* TaskTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableCell.swift; sourceTree = "<group>"; };
-		A9A05E3B23F130A0003171DA /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlternates-Bold.ttf"; path = "../../../../MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
-		A9B5B31D23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlternates-ExtraBold.ttf"; path = "../../../../MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
+		A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
 		A9D2B21123FB100A00AD8556 /* AmigoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoAnnotation.swift; sourceTree = "<group>"; };
 		A9D2B21323FB41A300AD8556 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		A9D2B21523FB427500AD8556 /* MapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRepository.swift; sourceTree = "<group>"; };
@@ -327,8 +327,8 @@
 		A9A05E3A23F12FF7003171DA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A9B5B31D23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf */,
-				A9A05E3B23F130A0003171DA /* MontserratAlternates-Bold.ttf */,
+				A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */,
+				A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -510,10 +510,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A900F71D23EDFCAA00C525EE /* LaunchScreen.storyboard in Resources */,
-				A9A05E3C23F130A0003171DA /* MontserratAlternates-Bold.ttf in Resources */,
+				A9A83E17240DB6D00058A222 /* MontserratAlternates-Bold.ttf in Resources */,
 				A96D84DE23F5DCB500FB85D7 /* GoogleService-Info.plist in Resources */,
 				A900F71A23EDFCAA00C525EE /* Assets.xcassets in Resources */,
-				A9B5B31E23F3ED51007E30EC /* MontserratAlternates-ExtraBold.ttf in Resources */,
+				A9A83E18240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
