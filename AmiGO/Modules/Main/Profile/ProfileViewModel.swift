@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+
+class ProfileViewModel {
+    public let updateShareLocation: PublishSubject<Bool> = PublishSubject()
+    public let shareLocationOn: PublishSubject<Bool> = PublishSubject()
+    
+    func updateShareLocation(value: Bool){
+        updateShareLocation.onNext(value)
+    }
+    
+    func initialize(){
+        let shareOn = UserDefaults.standard.bool(forKey: "share_location")
+        shareLocationOn.onNext(shareOn)
+    }
+}
