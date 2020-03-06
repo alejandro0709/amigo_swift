@@ -8,7 +8,6 @@
 
 import Foundation
 import RxSwift
-import Mapbox
 
 class MapViewModel {
     var repository:MapRepository
@@ -36,13 +35,7 @@ class MapViewModel {
     
     func getMapAnnotations() -> Observable<AmigoAnnotation>{
         return self.repository.getUserWeatherList().map { userWeather -> AmigoAnnotation in
-            let annotation = AmigoAnnotation()
-            annotation.tempetureValue = userWeather.getUserLocationTempeture()
-            annotation.coordinate = CLLocationCoordinate2D(latitude: userWeather.latitude!, longitude: userWeather.longitude!)
-            annotation.weatherType = AmigoAnnotation.STORM
-            annotation.userName = userWeather.name
-            annotation.userImage = userWeather.userImage
-            annotation.title = userWeather.name.lowercased().replacingOccurrences(of: " ", with: "_")
+            let annotation = AmigoAnnotation(userWeather:userWeather, weatherType: AmigoAnnotation.STORM)
             return annotation
         }
     }

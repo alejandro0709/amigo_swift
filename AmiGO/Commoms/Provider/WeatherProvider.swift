@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 protocol WeatherProvider {
-    func getWeatherByCoordinates(latitude: Double, longitude: Double) -> Observable<RestManager.Results>
+    func getWeatherTemperatureByCoordinates(latitude: Double, longitude: Double) -> Observable<Double?>
 }

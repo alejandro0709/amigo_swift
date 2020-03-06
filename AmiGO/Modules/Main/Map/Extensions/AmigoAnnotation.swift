@@ -7,17 +7,42 @@
 //
 
 import Foundation
-import Mapbox
+import MapKit
 
-class AmigoAnnotation: MGLPointAnnotation {
+class AmigoAnnotation: NSObject, MKAnnotation  {
+    
     public static let SUNNY = "sun"
     public static let CLOUDY = "cloudy"
     public static let STORM = "storm"
     
-    var tempetureValue:String?
-    var weatherType:String = SUNNY
-    var userName:String = ""
-    var userImage:String?
+    var userWeather:UserWeather
     
+    var temperatureValue:String? {
+        return userWeather.getUserLocationTempeture()
+    }
+    
+    var weatherType:String = SUNNY
+    
+    var userName:String?{
+        return userWeather.name
+    }
+    
+    var userImage:String?{
+        return userWeather.userImage
+    }
+    
+    let title: String?
+    
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D.init(latitude: userWeather.latitude ?? 0, longitude: userWeather.longitude ?? 0)
+    }
+    
+    init(userWeather: UserWeather, weatherType: String) {
+        self.userWeather = userWeather
+        self.weatherType = weatherType
+        self.title = userWeather.name.lowercased().replacingOccurrences(of: " ", with: "_")
+        super.init()
+     }
+
 }
 

@@ -9,7 +9,6 @@
 import Foundation
 import RxSwift
 
-
 class MapRepositoryImpl: MapRepository {
 
     let userProvider: UserProvider
@@ -37,30 +36,12 @@ class MapRepositoryImpl: MapRepository {
     }
     
     private func attemptGetUserWeather(_ user:User,_ observer:AnyObserver<UserWeather>){
-        weatherProvider.getWeatherByCoordinates(latitude: user.location!.latitude, longitude: user.location!.longitude).subscribe(onNext: { result in
-            if result.error != nil{
-                observer.onError(result.error!)
-            } else {
-                if let data = result.data {
-                    let temp = self.getTempFromResponse(data)
-                    let userData = UserWeather(user.name! ,user.image, temp, user.location?.latitude, user.location?.longitude)
-                    observer.onNext(userData)
-                }
-            }
+        weatherProvider.getWeatherTemperatureByCoordinates(latitude: user.location!.latitude, longitude: user.location!.longitude).subscribe(onNext: { result in
+            let userData = UserWeather(user.name! ,user.image, result, user.location?.latitude, user.location?.longitude)
+            observer.onNext(userData)
         }, onError: { error in
             observer.onError(error)
         }).disposed(by: disposeBag)
     }
-    
-    private func getTempFromResponse(_ data: Data) -> Double?{
-           let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String:AnyObject]]
-           if json?.count == 0 { return nil }
-           guard case let main as [String:AnyObject] = json?[0]["main"] else { return nil }
-           if main["temp"] != nil { return main["temp"] as? Double }
-           return nil
-   }
-    
-    
-    
     
 }

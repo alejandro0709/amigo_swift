@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20DC7DC3CBD187B59C2696D2 /* Pods_AmiGOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F83FA646C4B2C4DF1EC037 /* Pods_AmiGOTests.framework */; };
+		3A093B5B47000F8131E747D0 /* Pods_AmiGOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F156E7F7845D95C4466E6EFE /* Pods_AmiGOTests.framework */; };
+		467087D7D0E139E85D4A5BEC /* Pods_AmiGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37AAEFEBA7CA5D29CC0EDCF /* Pods_AmiGO.framework */; };
 		9A2E72D586ADF43FBBA0FA6B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E713A8A64CAE70B06A088 /* MapViewController.swift */; };
 		9A2E7472E1F6604EE3FBE164 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E74E3B8DB260077C6CCED /* AuthenticationViewController.swift */; };
 		9A2E77CAB3F44615EEDC9E6A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2E7E8E3F9C33C4570C2593 /* ProfileViewController.swift */; };
@@ -24,18 +25,30 @@
 		A900F71D23EDFCAA00C525EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A900F71B23EDFCAA00C525EE /* LaunchScreen.storyboard */; };
 		A900F72823EDFCAA00C525EE /* AmiGOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F72723EDFCAA00C525EE /* AmiGOTests.swift */; };
 		A900F73323EDFCAA00C525EE /* AmiGOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900F73223EDFCAA00C525EE /* AmiGOUITests.swift */; };
-		A9122CC0240882A800991525 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9122CBF240882A800991525 /* TaskViewController.swift */; };
-		A9122CC22408833900991525 /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9122CC12408833900991525 /* TasksView.swift */; };
 		A91389EF23FDDA1800B35BF4 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91389EE23FDDA1800B35BF4 /* RestManager.swift */; };
 		A91389F123FDDABC00B35BF4 /* RestManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91389F023FDDABC00B35BF4 /* RestManager+Extension.swift */; };
 		A91389F323FE1BF800B35BF4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91389F223FE1BF800B35BF4 /* ProfileViewModel.swift */; };
+		A92C80502411911E00CD62AB /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C804F2411911E00CD62AB /* TaskView.swift */; };
+		A92C80522411924C00CD62AB /* TaskUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C80512411924C00CD62AB /* TaskUITableViewCell.swift */; };
 		A942D68B23F8B09200C3A87F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942D68A23F8B09200C3A87F /* UIView+Extension.swift */; };
 		A942D69023F8D69B00C3A87F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942D68F23F8D69B00C3A87F /* UIColor+Extension.swift */; };
 		A96D84DE23F5DCB500FB85D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A96D84DD23F5DCB500FB85D7 /* GoogleService-Info.plist */; };
+		A9885387240EC438006FFC4D /* TasksCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885386240EC438006FFC4D /* TasksCache.swift */; };
+		A988538A240EC466006FFC4D /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885388240EC463006FFC4D /* TaskRepository.swift */; };
+		A988538B240EC466006FFC4D /* TasksRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885389240EC465006FFC4D /* TasksRepositoryImpl.swift */; };
+		A988538D240EC589006FFC4D /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988538C240EC589006FFC4D /* TaskViewController.swift */; };
+		A988538F240EC608006FFC4D /* TaskViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988538E240EC608006FFC4D /* TaskViewControllerView.swift */; };
+		A9885394240EC74B006FFC4D /* TaskUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885393240EC74B006FFC4D /* TaskUICollectionViewCell.swift */; };
+		A9885396240EC83D006FFC4D /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885395240EC83D006FFC4D /* Tasks.swift */; };
+		A9885398240EE48A006FFC4D /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885397240EE48A006FFC4D /* TaskViewModel.swift */; };
+		A988539A240F57C6006FFC4D /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9885399240F57C6006FFC4D /* AddTaskViewController.swift */; };
+		A988539C240F5C62006FFC4D /* AddTaskViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988539B240F5C62006FFC4D /* AddTaskViewControllerView.swift */; };
 		A991BFD323FAFA8D00BF9DC8 /* AmigoAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991BFD223FAFA8D00BF9DC8 /* AmigoAnnotationView.swift */; };
 		A991F6F523F462B10019B523 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A991F6F423F462B10019B523 /* Location.swift */; };
 		A9A83E17240DB6D00058A222 /* MontserratAlternates-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */; };
 		A9A83E18240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */; };
+		A9B579FF24100EB300C49023 /* AmiGO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B579FE24100EB300C49023 /* AmiGO.swift */; };
+		A9B57A0424104D5700C49023 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B57A0324104D5700C49023 /* AddTaskViewModel.swift */; };
 		A9D2B21223FB100A00AD8556 /* AmigoAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21123FB100A00AD8556 /* AmigoAnnotation.swift */; };
 		A9D2B21423FB41A300AD8556 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21323FB41A300AD8556 /* MapViewModel.swift */; };
 		A9D2B21623FB427500AD8556 /* MapRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D2B21523FB427500AD8556 /* MapRepository.swift */; };
@@ -47,8 +60,7 @@
 		A9EFC09D240061C600E45E62 /* UserWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFC09C240061C600E45E62 /* UserWeather.swift */; };
 		A9F3D90D23F732240094F8FA /* MapControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F3D90C23F732240094F8FA /* MapControllerView.swift */; };
 		A9F3D90F23F87BFA0094F8FA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F3D90E23F87BFA0094F8FA /* ProfileView.swift */; };
-		B825344262B466C73F5C9D7F /* Pods_AmiGO_AmiGOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD77D4B6C41D8FD7D8CB108 /* Pods_AmiGO_AmiGOUITests.framework */; };
-		D95F4AEE190229937F4DD637 /* Pods_AmiGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93AFFCEE98D9CDA24DCF749 /* Pods_AmiGO.framework */; };
+		C0DAADCC92D5A9A2A3210BAC /* Pods_AmiGO_AmiGOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F6DB6B52968DED5ED35BA2 /* Pods_AmiGO_AmiGOUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +81,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01F83FA646C4B2C4DF1EC037 /* Pods_AmiGOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DD77D4B6C41D8FD7D8CB108 /* Pods_AmiGO_AmiGOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGO_AmiGOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44553332AE578F1F7295F16C /* Pods-AmiGO-AmiGOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO-AmiGOUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		45356C7AA8FD4760EADD29FF /* Pods-AmiGOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGOTests.release.xcconfig"; path = "Target Support Files/Pods-AmiGOTests/Pods-AmiGOTests.release.xcconfig"; sourceTree = "<group>"; };
-		6917232D32A22AD5C776E6F5 /* Pods-AmiGO-AmiGOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO-AmiGOUITests.release.xcconfig"; path = "Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6AFB5572674BB7F369429E0D /* Pods-AmiGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO.debug.xcconfig"; path = "Target Support Files/Pods-AmiGO/Pods-AmiGO.debug.xcconfig"; sourceTree = "<group>"; };
-		6F6352E90948DE9CB5C6D066 /* Pods-AmiGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO.release.xcconfig"; path = "Target Support Files/Pods-AmiGO/Pods-AmiGO.release.xcconfig"; sourceTree = "<group>"; };
+		13B903ABE20FDBB3778B1C67 /* Pods-AmiGO-AmiGOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO-AmiGOUITests.release.xcconfig"; path = "Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		58E3844A570F06D237BB9C01 /* Pods-AmiGOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGOTests.release.xcconfig"; path = "Target Support Files/Pods-AmiGOTests/Pods-AmiGOTests.release.xcconfig"; sourceTree = "<group>"; };
+		61F6DB6B52968DED5ED35BA2 /* Pods_AmiGO_AmiGOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGO_AmiGOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2E70399E98D79995E3AA33 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9A2E70CEAAC0DE947C970501 /* AuthRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		9A2E713A8A64CAE70B06A088 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 		9A2E79E444F3D350CF00BAEE /* DatabaseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseUtil.swift; sourceTree = "<group>"; };
 		9A2E7DD84AA340534F379772 /* Container+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+Extensions.swift"; sourceTree = "<group>"; };
 		9A2E7E8E3F9C33C4570C2593 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A37AAEFEBA7CA5D29CC0EDCF /* Pods_AmiGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A900F70D23EDFCA900C525EE /* AmiGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmiGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A900F71023EDFCA900C525EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A900F71423EDFCA900C525EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,18 +107,30 @@
 		A900F72E23EDFCAA00C525EE /* AmiGOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmiGOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A900F73223EDFCAA00C525EE /* AmiGOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiGOUITests.swift; sourceTree = "<group>"; };
 		A900F73423EDFCAA00C525EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9122CBF240882A800991525 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
-		A9122CC12408833900991525 /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		A91389EE23FDDA1800B35BF4 /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		A91389F023FDDABC00B35BF4 /* RestManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestManager+Extension.swift"; sourceTree = "<group>"; };
 		A91389F223FE1BF800B35BF4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A92C804F2411911E00CD62AB /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		A92C80512411924C00CD62AB /* TaskUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUITableViewCell.swift; sourceTree = "<group>"; };
 		A942D68A23F8B09200C3A87F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A942D68F23F8D69B00C3A87F /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A96D84DD23F5DCB500FB85D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Desktop/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9885386240EC438006FFC4D /* TasksCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksCache.swift; sourceTree = "<group>"; };
+		A9885388240EC463006FFC4D /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		A9885389240EC465006FFC4D /* TasksRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksRepositoryImpl.swift; sourceTree = "<group>"; };
+		A988538C240EC589006FFC4D /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		A988538E240EC608006FFC4D /* TaskViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewControllerView.swift; sourceTree = "<group>"; };
+		A9885393240EC74B006FFC4D /* TaskUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskUICollectionViewCell.swift; sourceTree = "<group>"; };
+		A9885395240EC83D006FFC4D /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
+		A9885397240EE48A006FFC4D /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		A9885399240F57C6006FFC4D /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		A988539B240F5C62006FFC4D /* AddTaskViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewControllerView.swift; sourceTree = "<group>"; };
 		A991BFD223FAFA8D00BF9DC8 /* AmigoAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoAnnotationView.swift; sourceTree = "<group>"; };
 		A991F6F423F462B10019B523 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		A9A83E15240DB6D00058A222 /* MontserratAlternates-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-Bold.ttf"; sourceTree = "<group>"; };
 		A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
+		A9B579FE24100EB300C49023 /* AmiGO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmiGO.swift; sourceTree = "<group>"; };
+		A9B57A0324104D5700C49023 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
 		A9D2B21123FB100A00AD8556 /* AmigoAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmigoAnnotation.swift; sourceTree = "<group>"; };
 		A9D2B21323FB41A300AD8556 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		A9D2B21523FB427500AD8556 /* MapRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRepository.swift; sourceTree = "<group>"; };
@@ -121,8 +142,11 @@
 		A9EFC09C240061C600E45E62 /* UserWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWeather.swift; sourceTree = "<group>"; };
 		A9F3D90C23F732240094F8FA /* MapControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapControllerView.swift; sourceTree = "<group>"; };
 		A9F3D90E23F87BFA0094F8FA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		B69C27965D389ED64DEB8223 /* Pods-AmiGOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGOTests.debug.xcconfig"; path = "Target Support Files/Pods-AmiGOTests/Pods-AmiGOTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B93AFFCEE98D9CDA24DCF749 /* Pods_AmiGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C940475EEF3FD990F99D334F /* Pods-AmiGO-AmiGOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO-AmiGOUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCBDAF86427ECCE6E4D22C10 /* Pods-AmiGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO.release.xcconfig"; path = "Target Support Files/Pods-AmiGO/Pods-AmiGO.release.xcconfig"; sourceTree = "<group>"; };
+		D9E90EA3DD8738526A961C9F /* Pods-AmiGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGO.debug.xcconfig"; path = "Target Support Files/Pods-AmiGO/Pods-AmiGO.debug.xcconfig"; sourceTree = "<group>"; };
+		F156E7F7845D95C4466E6EFE /* Pods_AmiGOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmiGOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A8F7030558B86827B6A864 /* Pods-AmiGOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmiGOTests.debug.xcconfig"; path = "Target Support Files/Pods-AmiGOTests/Pods-AmiGOTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95F4AEE190229937F4DD637 /* Pods_AmiGO.framework in Frameworks */,
+				467087D7D0E139E85D4A5BEC /* Pods_AmiGO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20DC7DC3CBD187B59C2696D2 /* Pods_AmiGOTests.framework in Frameworks */,
+				3A093B5B47000F8131E747D0 /* Pods_AmiGOTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,22 +170,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B825344262B466C73F5C9D7F /* Pods_AmiGO_AmiGOUITests.framework in Frameworks */,
+				C0DAADCC92D5A9A2A3210BAC /* Pods_AmiGO_AmiGOUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6305C59A5FCD5F2B7C4469 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A37AAEFEBA7CA5D29CC0EDCF /* Pods_AmiGO.framework */,
+				61F6DB6B52968DED5ED35BA2 /* Pods_AmiGO_AmiGOUITests.framework */,
+				F156E7F7845D95C4466E6EFE /* Pods_AmiGOTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2FD612879D569791461C61F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6AFB5572674BB7F369429E0D /* Pods-AmiGO.debug.xcconfig */,
-				6F6352E90948DE9CB5C6D066 /* Pods-AmiGO.release.xcconfig */,
-				44553332AE578F1F7295F16C /* Pods-AmiGO-AmiGOUITests.debug.xcconfig */,
-				6917232D32A22AD5C776E6F5 /* Pods-AmiGO-AmiGOUITests.release.xcconfig */,
-				B69C27965D389ED64DEB8223 /* Pods-AmiGOTests.debug.xcconfig */,
-				45356C7AA8FD4760EADD29FF /* Pods-AmiGOTests.release.xcconfig */,
+				D9E90EA3DD8738526A961C9F /* Pods-AmiGO.debug.xcconfig */,
+				CCBDAF86427ECCE6E4D22C10 /* Pods-AmiGO.release.xcconfig */,
+				C940475EEF3FD990F99D334F /* Pods-AmiGO-AmiGOUITests.debug.xcconfig */,
+				13B903ABE20FDBB3778B1C67 /* Pods-AmiGO-AmiGOUITests.release.xcconfig */,
+				F1A8F7030558B86827B6A864 /* Pods-AmiGOTests.debug.xcconfig */,
+				58E3844A570F06D237BB9C01 /* Pods-AmiGOTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -179,6 +213,8 @@
 		9A2E72E0F167459F870231ED /* Commoms */ = {
 			isa = PBXGroup;
 			children = (
+				A9B579FD24100E9F00C49023 /* Api */,
+				A9885385240EC416006FFC4D /* Cache */,
 				A9D2B21923FB43C700AD8556 /* Provider */,
 				9A2E75171573666343F07EDB /* Repositories */,
 				9A2E79E444F3D350CF00BAEE /* DatabaseUtil.swift */,
@@ -190,6 +226,7 @@
 		9A2E7499215CED7E01D71ECD /* Impl */ = {
 			isa = PBXGroup;
 			children = (
+				A9885389240EC465006FFC4D /* TasksRepositoryImpl.swift */,
 				9A2E762DE71E726FCAB0E688 /* AuthRepositoryImpl.swift */,
 				A9D2B21723FB435500AD8556 /* MapRepositoryImpl.swift */,
 			);
@@ -199,6 +236,7 @@
 		9A2E75171573666343F07EDB /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				A9885388240EC463006FFC4D /* TaskRepository.swift */,
 				9A2E70CEAAC0DE947C970501 /* AuthRepository.swift */,
 				9A2E7499215CED7E01D71ECD /* Impl */,
 				A9D2B21523FB427500AD8556 /* MapRepository.swift */,
@@ -223,6 +261,7 @@
 				9A2E70399E98D79995E3AA33 /* User.swift */,
 				A991F6F423F462B10019B523 /* Location.swift */,
 				A9EFC09C240061C600E45E62 /* UserWeather.swift */,
+				A9885395240EC83D006FFC4D /* Tasks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,7 +283,7 @@
 				A900F73123EDFCAA00C525EE /* AmiGOUITests */,
 				A900F70E23EDFCA900C525EE /* Products */,
 				2FD612879D569791461C61F7 /* Pods */,
-				EB19BDEDA294427BAFD71F44 /* Frameworks */,
+				0D6305C59A5FCD5F2B7C4469 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,8 +336,8 @@
 		A9122CBA24086E6900991525 /* RealmToDo */ = {
 			isa = PBXGroup;
 			children = (
-				A9122CBF240882A800991525 /* TaskViewController.swift */,
-				A9122CC12408833900991525 /* TasksView.swift */,
+				A9B57A00241043E100C49023 /* AddTasks */,
+				A9B57A012410440F00C49023 /* ListTasks */,
 			);
 			path = RealmToDo;
 			sourceTree = "<group>";
@@ -310,6 +349,23 @@
 				A91389F023FDDABC00B35BF4 /* RestManager+Extension.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		A9885385240EC416006FFC4D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A9885386240EC438006FFC4D /* TasksCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		A9885390240EC6EE006FFC4D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A988538E240EC608006FFC4D /* TaskViewControllerView.swift */,
+				A92C804F2411911E00CD62AB /* TaskView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		A991BFCF23FADF9500BF9DC8 /* view */ = {
@@ -328,6 +384,52 @@
 				A9A83E16240DB6D00058A222 /* MontserratAlternates-ExtraBold.ttf */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9B18259240E491200F03718 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9A2E768FA1814E6B8877C1B7 /* AuthenticationView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A9B579FD24100E9F00C49023 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				A9B579FE24100EB300C49023 /* AmiGO.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		A9B57A00241043E100C49023 /* AddTasks */ = {
+			isa = PBXGroup;
+			children = (
+				A9B57A022410443500C49023 /* view */,
+				A9885399240F57C6006FFC4D /* AddTaskViewController.swift */,
+				A9B57A0324104D5700C49023 /* AddTaskViewModel.swift */,
+			);
+			path = AddTasks;
+			sourceTree = "<group>";
+		};
+		A9B57A012410440F00C49023 /* ListTasks */ = {
+			isa = PBXGroup;
+			children = (
+				A9885397240EE48A006FFC4D /* TaskViewModel.swift */,
+				A9885390240EC6EE006FFC4D /* view */,
+				A988538C240EC589006FFC4D /* TaskViewController.swift */,
+				A9885393240EC74B006FFC4D /* TaskUICollectionViewCell.swift */,
+				A92C80512411924C00CD62AB /* TaskUITableViewCell.swift */,
+			);
+			path = ListTasks;
+			sourceTree = "<group>";
+		};
+		A9B57A022410443500C49023 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A988539B240F5C62006FFC4D /* AddTaskViewControllerView.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		A9D2B21023FB0FC100AD8556 /* Extensions */ = {
@@ -362,8 +464,8 @@
 		A9E89C1B23EEFB80000D4840 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				A9B18259240E491200F03718 /* view */,
 				9A2E74E3B8DB260077C6CCED /* AuthenticationViewController.swift */,
-				9A2E768FA1814E6B8877C1B7 /* AuthenticationView.swift */,
 				9A2E78CE0994A1AB2EA26DEB /* AuthenticationViewModel.swift */,
 			);
 			path = Authentication;
@@ -387,16 +489,6 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		EB19BDEDA294427BAFD71F44 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B93AFFCEE98D9CDA24DCF749 /* Pods_AmiGO.framework */,
-				3DD77D4B6C41D8FD7D8CB108 /* Pods_AmiGO_AmiGOUITests.framework */,
-				01F83FA646C4B2C4DF1EC037 /* Pods_AmiGOTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -404,11 +496,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A900F73723EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGO" */;
 			buildPhases = (
-				1560FEEC7F905CC80E2D8502 /* [CP] Check Pods Manifest.lock */,
+				D793CFCE90753EB2ED8DF271 /* [CP] Check Pods Manifest.lock */,
 				A900F70923EDFCA900C525EE /* Sources */,
 				A900F70A23EDFCA900C525EE /* Frameworks */,
 				A900F70B23EDFCA900C525EE /* Resources */,
-				840772A7410AA8D14722A22B /* [CP] Embed Pods Frameworks */,
+				74AABC1DA045A4D519F4AAA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,7 +515,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A900F73A23EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGOTests" */;
 			buildPhases = (
-				52F89F59D811029234C2513C /* [CP] Check Pods Manifest.lock */,
+				3129B52BA448DD7590E5F5BC /* [CP] Check Pods Manifest.lock */,
 				A900F71F23EDFCAA00C525EE /* Sources */,
 				A900F72023EDFCAA00C525EE /* Frameworks */,
 				A900F72123EDFCAA00C525EE /* Resources */,
@@ -442,11 +534,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A900F73D23EDFCAA00C525EE /* Build configuration list for PBXNativeTarget "AmiGOUITests" */;
 			buildPhases = (
-				AD73AB218B6CFC774EB8213F /* [CP] Check Pods Manifest.lock */,
+				A8C638ECD68596C4D7EC7DE0 /* [CP] Check Pods Manifest.lock */,
 				A900F72A23EDFCAA00C525EE /* Sources */,
 				A900F72B23EDFCAA00C525EE /* Frameworks */,
 				A900F72C23EDFCAA00C525EE /* Resources */,
-				C58B61B5E95424713107FB3D /* [CP] Embed Pods Frameworks */,
+				89643FEC56F78525BE2B5254 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -531,29 +623,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1560FEEC7F905CC80E2D8502 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AmiGO-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		52F89F59D811029234C2513C /* [CP] Check Pods Manifest.lock */ = {
+		3129B52BA448DD7590E5F5BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -575,7 +645,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		840772A7410AA8D14722A22B /* [CP] Embed Pods Frameworks */ = {
+		74AABC1DA045A4D519F4AAA7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -592,7 +662,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmiGO/Pods-AmiGO-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AD73AB218B6CFC774EB8213F /* [CP] Check Pods Manifest.lock */ = {
+		89643FEC56F78525BE2B5254 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C638ECD68596C4D7EC7DE0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -614,21 +701,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C58B61B5E95424713107FB3D /* [CP] Embed Pods Frameworks */ = {
+		D793CFCE90753EB2ED8DF271 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmiGO-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmiGO-AmiGOUITests/Pods-AmiGO-AmiGOUITests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -638,36 +730,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A988538A240EC466006FFC4D /* TaskRepository.swift in Sources */,
 				A900F71523EDFCA900C525EE /* ViewController.swift in Sources */,
 				A91389EF23FDDA1800B35BF4 /* RestManager.swift in Sources */,
-				A9122CC0240882A800991525 /* TaskViewController.swift in Sources */,
 				A900F71123EDFCA900C525EE /* AppDelegate.swift in Sources */,
 				A91389F323FE1BF800B35BF4 /* ProfileViewModel.swift in Sources */,
 				9A2E7472E1F6604EE3FBE164 /* AuthenticationViewController.swift in Sources */,
 				A9EFC09D240061C600E45E62 /* UserWeather.swift in Sources */,
+				A988538F240EC608006FFC4D /* TaskViewControllerView.swift in Sources */,
+				A988539C240F5C62006FFC4D /* AddTaskViewControllerView.swift in Sources */,
 				A9D2B21223FB100A00AD8556 /* AmigoAnnotation.swift in Sources */,
 				A9D2B21623FB427500AD8556 /* MapRepository.swift in Sources */,
 				A9D2B21D23FB453D00AD8556 /* UserProviderImpl.swift in Sources */,
+				A92C80502411911E00CD62AB /* TaskView.swift in Sources */,
+				A9885398240EE48A006FFC4D /* TaskViewModel.swift in Sources */,
+				A9B579FF24100EB300C49023 /* AmiGO.swift in Sources */,
 				9A2E7E973F0D79308381FF90 /* AuthenticationView.swift in Sources */,
-				A9122CC22408833900991525 /* TasksView.swift in Sources */,
+				A9885396240EC83D006FFC4D /* Tasks.swift in Sources */,
+				A988538B240EC466006FFC4D /* TasksRepositoryImpl.swift in Sources */,
 				A942D69023F8D69B00C3A87F /* UIColor+Extension.swift in Sources */,
 				9A2E7E0BFE449004090E1FFE /* AuthenticationViewModel.swift in Sources */,
 				A991F6F523F462B10019B523 /* Location.swift in Sources */,
 				A91389F123FDDABC00B35BF4 /* RestManager+Extension.swift in Sources */,
 				A942D68B23F8B09200C3A87F /* UIView+Extension.swift in Sources */,
+				A9885394240EC74B006FFC4D /* TaskUICollectionViewCell.swift in Sources */,
 				9A2E7926A9336B06791708E7 /* AuthRepository.swift in Sources */,
 				A9EFC08A2400283000E45E62 /* WeatherProvider.swift in Sources */,
 				A9F3D90F23F87BFA0094F8FA /* ProfileView.swift in Sources */,
 				A9D2B21423FB41A300AD8556 /* MapViewModel.swift in Sources */,
+				A988539A240F57C6006FFC4D /* AddTaskViewController.swift in Sources */,
 				9A2E7889AE3344F062BDDB2D /* AuthRepositoryImpl.swift in Sources */,
 				9A2E789BBEE38EC3D85527A5 /* DatabaseUtil.swift in Sources */,
 				A9F3D90D23F732240094F8FA /* MapControllerView.swift in Sources */,
+				A9B57A0424104D5700C49023 /* AddTaskViewModel.swift in Sources */,
 				9A2E7E14175B1EC0FA6C3236 /* User.swift in Sources */,
 				A9EFC09B240038B100E45E62 /* WeatherProviderImpl.swift in Sources */,
 				A9D2B21B23FB43E600AD8556 /* UserProvider.swift in Sources */,
+				A92C80522411924C00CD62AB /* TaskUITableViewCell.swift in Sources */,
+				A9885387240EC438006FFC4D /* TasksCache.swift in Sources */,
 				A991BFD323FAFA8D00BF9DC8 /* AmigoAnnotationView.swift in Sources */,
 				9A2E7A4B6E334FBE608576EA /* Container+Extensions.swift in Sources */,
 				9A2E72D586ADF43FBBA0FA6B /* MapViewController.swift in Sources */,
+				A988538D240EC589006FFC4D /* TaskViewController.swift in Sources */,
 				A9D2B21823FB435500AD8556 /* MapRepositoryImpl.swift in Sources */,
 				9A2E77CAB3F44615EEDC9E6A /* ProfileViewController.swift in Sources */,
 			);
@@ -832,7 +936,7 @@
 		};
 		A900F73823EDFCAA00C525EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AFB5572674BB7F369429E0D /* Pods-AmiGO.debug.xcconfig */;
+			baseConfigurationReference = D9E90EA3DD8738526A961C9F /* Pods-AmiGO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -853,7 +957,7 @@
 		};
 		A900F73923EDFCAA00C525EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F6352E90948DE9CB5C6D066 /* Pods-AmiGO.release.xcconfig */;
+			baseConfigurationReference = CCBDAF86427ECCE6E4D22C10 /* Pods-AmiGO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -873,7 +977,7 @@
 		};
 		A900F73B23EDFCAA00C525EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B69C27965D389ED64DEB8223 /* Pods-AmiGOTests.debug.xcconfig */;
+			baseConfigurationReference = F1A8F7030558B86827B6A864 /* Pods-AmiGOTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -895,7 +999,7 @@
 		};
 		A900F73C23EDFCAA00C525EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45356C7AA8FD4760EADD29FF /* Pods-AmiGOTests.release.xcconfig */;
+			baseConfigurationReference = 58E3844A570F06D237BB9C01 /* Pods-AmiGOTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -917,7 +1021,7 @@
 		};
 		A900F73E23EDFCAA00C525EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44553332AE578F1F7295F16C /* Pods-AmiGO-AmiGOUITests.debug.xcconfig */;
+			baseConfigurationReference = C940475EEF3FD990F99D334F /* Pods-AmiGO-AmiGOUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Manual;
@@ -940,7 +1044,7 @@
 		};
 		A900F73F23EDFCAA00C525EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6917232D32A22AD5C776E6F5 /* Pods-AmiGO-AmiGOUITests.release.xcconfig */;
+			baseConfigurationReference = 13B903ABE20FDBB3778B1C67 /* Pods-AmiGO-AmiGOUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Manual;

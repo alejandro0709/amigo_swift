@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import FlexLayout
 import PinLayout
+import Kingfisher
 
 class ProfileView: UIView {
     private var rootFlexContainer = UIView()
@@ -64,6 +65,8 @@ class ProfileView: UIView {
         imageView.image = UIImage(named: "bkg_line")
         return imageView
     }()
+    
+    var userImage = UIImageView()
 
    
 
@@ -71,6 +74,8 @@ class ProfileView: UIView {
         super.init(frame: .zero)
         
         self.backgroundColor = UIColor.white
+        
+//        https://picsum.photos/id/237/200/300
 
         rootFlexContainer.flex
             .backgroundColor(UIColor.white)
@@ -94,12 +99,11 @@ class ProfileView: UIView {
                             .backgroundColor(UIColor.white.withAlphaComponent(0.1))
                             .justifyContent(.center)
                             .define{ flex in
-                                flex.addItem()
-                                    .backgroundColor(UIColor.systemTeal)
-                                    .width(144)
-                                    .height(144)
+                                flex.addItem(userImage)
+                                    .width(145)
+                                    .height(145)
                                     .alignSelf(.center)
-                                    .view!.layer.cornerRadius = 72
+                                    
                                 
                         }.view!.layer.cornerRadius = 95
                 }
@@ -154,6 +158,15 @@ class ProfileView: UIView {
         
         self.logoutButton.addTarget(self, action: #selector(onLogoutPressed), for: .touchUpInside)
         
+        userImage.kf.indicatorType = .activity
+        
+        let url = URL(string: "https://picsum.photos/id/237/250/250")
+//        let url = URL(string: "https://picsum.photos/id/0/250/250")
+//        let url = URL(string: "https://picsum.photos/id/1060/250/250")
+        
+        let processor = RoundCornerImageProcessor(cornerRadius: 125)
+        userImage.kf.setImage(with: url, options: [.transition(.fade(0.2)),.processor(processor)])
+        
         addSubview(rootFlexContainer)
     }
     
@@ -162,6 +175,7 @@ class ProfileView: UIView {
         layer.frame = self.verticalRectGradient.frame
         layer.colors = [UIColor.gradientStartColor.cgColor,UIColor.gradientCenterColor.cgColor,
                         UIColor.white.withAlphaComponent(0).cgColor, UIColor.white.withAlphaComponent(0).cgColor]
+        verticalRectGradient.layer.sublayers?.removeAll()
         verticalRectGradient.layer.addSublayer(layer)
         verticalRectGradient.flex.markDirty()
         setNeedsLayout()

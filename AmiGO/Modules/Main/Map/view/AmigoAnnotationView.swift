@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import Mapbox
 import FlexLayout
 import PinLayout
+import MapKit
 
-class AmigoAnnotationView: MGLAnnotationView {
+class AmigoAnnotationView: MKAnnotationView {
     private var rootFlexContainer = UIView()
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,8 +31,9 @@ class AmigoAnnotationView: MGLAnnotationView {
         return image
     }()
     
-    init() {
-        super.init(frame: .zero)
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+        self.setupDataFromAnnotation(annotation)
         rootFlexContainer.flex
             .width(118)
             .height(70)
@@ -68,6 +69,17 @@ class AmigoAnnotationView: MGLAnnotationView {
         
         addSubview(rootFlexContainer)
     }
+    private func setupDataFromAnnotation(_ annotation: MKAnnotation?){
+        if annotation == nil { return }
+        
+        let convAnnotation  = annotation as! AmigoAnnotation
+        guard let valueTemp = convAnnotation.temperatureValue else {
+            return
+        }
+        tempetureLabel.text = valueTemp
+        
+        weatherImage.image = UIImage(named: convAnnotation.weatherType)
+    }
     
     private func setTemperature(temp: String?){
         guard let valueTemp = temp else {
@@ -86,13 +98,11 @@ class AmigoAnnotationView: MGLAnnotationView {
         setTemperature(temp: temperuteValue)
         setWeatherImage(imageName: weatherImageName)
 //        set user image
-        setNeedsLayout()
     }
     
     func updateData(temperuteValue:String?, weatherImageName:String){
         setTemperature(temp: temperuteValue)
         setWeatherImage(imageName: weatherImageName)
-        setNeedsLayout()
     }
     
     override func layoutSubviews() {

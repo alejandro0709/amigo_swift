@@ -5,7 +5,6 @@
 
 import Foundation
 import FirebaseAuth
-import FirebaseDatabase
 import FirebaseFirestore
 import RxSwift
 

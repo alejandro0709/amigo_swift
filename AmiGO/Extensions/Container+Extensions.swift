@@ -5,7 +5,6 @@
 
 import Foundation
 import Swinject
-import FirebaseDatabase
 
 extension Container {
     static let sharedContainer: Container = {
@@ -52,6 +51,25 @@ extension Container {
         
         container.register(ProfileViewModel.self){ _ in
             return ProfileViewModel()
+        }
+        
+        container.register(TasksCache.self){_ in
+            return TasksCache()
+        }
+        
+        container.register(TaskRepository.self){ _ in
+            let cache = container.resolve(TasksCache.self)
+            return TasksRepositoryImpl.init(taskCache: cache!)
+        }
+        
+        container.register(TaskViewModel.self){ _ in
+            let repository = container.resolve(TaskRepository.self)
+            return TaskViewModel.init(repository: repository!)
+        }
+        
+        container.register(AddTaskViewModel.self){_ in
+            let repository = container.resolve(TaskRepository.self)
+            return AddTaskViewModel.init(withRepository: repository!)
         }
 
         return container

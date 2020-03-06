@@ -17,10 +17,12 @@ target 'AmiGO' do
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
   pod 'Firebase/Auth'
-  pod 'Firebase/Database'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
-  pod 'Mapbox-iOS-SDK', '~> 5.7'
+  pod 'Kingfisher', '~> 5.0'
+  pod 'Moya/RxSwift', '~> 14.0'
+  pod 'MBProgressHUD', '~> 1.2.0'
+ # pod 'Mapbox-iOS-SDK', '~> 5.7'
 
   target 'AmiGOTests' do
     inherit! :search_paths
