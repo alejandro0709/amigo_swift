@@ -46,15 +46,16 @@ class AddTaskViewController: UIViewController {
             }
         }).disposed(by: disposeBag)
         
-//        self.mainView.inputTextField.bin
-        
         viewModel?.initialize(taskId)
         
         guard let vm = self.viewModel else { return }
         self.mainView.titleTextField.rx.text.orEmpty.bind(to: vm.taskTitle).disposed(by: disposeBag)
         self.mainView.inputTextField.rx.text.orEmpty.bind(to: vm.taskDescription).disposed(by: disposeBag)
+//        self.mainView.addButton
         
     }
+    
+    
 }
 
 extension AddTaskViewController: AddTaskViewDelegate{
